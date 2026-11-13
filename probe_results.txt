@@ -1,0 +1,75 @@
+Function 1
+Times a is the min and b is the max: 1000 of 1000
+Chance of at least one 1 in Bernoulli(0.01): n = 10 is 0.096, n = 100 is 0.634, n = 1000 is 0.99996
+ 
+Function 2
+Uniform with n = 100000: [0.020, 0.971]
+Bernoulli(0.01) with n = 10000: [0.000, 0.000] and the true mean is 0.01
+ 
+Function 3
+n = 10: distance from center to mean is 0.000000, half width divided by sigma/sqrt(n) is 1.9600
+n = 100: distance from center to mean is 0.000000, half width divided by sigma/sqrt(n) is 1.9600
+n = 1000: distance from center to mean is 0.000000, half width divided by sigma/sqrt(n) is 1.9600
+n = 10000: distance from center to mean is 0.000000, half width divided by sigma/sqrt(n) is 1.9600
+Ten zeros: [0.000, 0.000]
+ 
+Function 4
+10 uniform values: [0.035, 0.975]
+10000 uniform values: [0.035, 0.975]
+50 zeros: [0.035, 0.975]
+50 ones: [0.035, 0.975]
+ 
+Function 5
+Same dataset, call 1: [0.000, 1.000]
+Same dataset, call 2: [0.000, 1.000]
+Same dataset, call 3: [0.000, 1.000]
+Same dataset, call 4: [0.000, 1.000]
+Same dataset, call 5: [0.000, 1.000]
+Same dataset, call 6: [0.000, 1.000]
+Same dataset, call 7: [0.000, 1.000]
+Same dataset, call 8: [0.484, 0.484]
+Out of 100000 datasets: [0, 1] was 0.8978, one point at the mean was 0.1022, other was 0.0000
+ 
+Function 6
+Sample mean 0.000: [0.000, 0.000]
+Sample mean 0.010: [0.010, 0.010]
+Sample mean 0.030: [0.030, 0.030]
+Sample mean 0.040: [0.040, 0.040]
+Sample mean 0.049: [0.049, 0.049]
+Sample mean 0.051: [0.000, 1.000]
+Sample mean 0.060: [0.000, 1.000]
+Sample mean 0.100: [0.000, 1.000]
+Sample mean 0.500: [0.000, 1.000]
+Same dataset, call 1: [0.000, 1.000]
+Same dataset, call 2: [0.000, 1.000]
+Same dataset, call 3: [0.000, 1.000]
+Same dataset, call 4: [0.000, 1.000]
+Same dataset, call 5: [0.000, 1.000]
+ 
+Function 7
+n = 10: distance from center to mean is 0.000000, half width is 0.2633 for uniform and 0.2633 for Bernoulli(0.01), alpha from Hoeffding is 0.500
+n = 100: distance from center to mean is 0.000000, half width is 0.0833 for uniform and 0.0833 for Bernoulli(0.01), alpha from Hoeffding is 0.500
+n = 1000: distance from center to mean is 0.000000, half width is 0.0263 for uniform and 0.0263 for Bernoulli(0.01), alpha from Hoeffding is 0.500
+n = 10000: distance from center to mean is 0.000000, half width is 0.0083 for uniform and 0.0083 for Bernoulli(0.01), alpha from Hoeffding is 0.500
+Worst coverage for n from 1 to 20 and Bernoulli(p): 0.745 at n = 3 and p = 0.50
+ 
+Function 8
+Uniform with n = 100000: [0.125, 0.924]
+Uniform with n = 1000000: [0.125, 0.925]
+Bernoulli(0.01) with n = 10000: [0.000, 0.000] and the true mean is 0.01
+ 
+Function 9
+n = 10: distance from center to mean is 0.000000, half width divided by sigma/sqrt(n) is 2.5758
+n = 100: distance from center to mean is 0.000000, half width divided by sigma/sqrt(n) is 2.5758
+n = 1000: distance from center to mean is 0.000000, half width divided by sigma/sqrt(n) is 2.5758
+n = 10000: distance from center to mean is 0.000000, half width divided by sigma/sqrt(n) is 2.5758
+Ten zeros: [0.000, 0.000]
+ 
+Function 10
+n = 10: distance from center to mean is 0.000000, half width is 0.3162 for uniform and 0.3162 for Bernoulli(0.01), half width times sqrt(n) is 1.0000
+n = 100: distance from center to mean is 0.000000, half width is 0.1000 for uniform and 0.1000 for Bernoulli(0.01), half width times sqrt(n) is 1.0000
+n = 1000: distance from center to mean is 0.000000, half width is 0.0316 for uniform and 0.0316 for Bernoulli(0.01), half width times sqrt(n) is 1.0000
+n = 10000: distance from center to mean is 0.000000, half width is 0.0100 for uniform and 0.0100 for Bernoulli(0.01), half width times sqrt(n) is 1.0000
+n = 100000: distance from center to mean is 0.000000, half width is 0.0032 for uniform and 0.0032 for Bernoulli(0.01), half width times sqrt(n) is 1.0000
+Alpha from Hoeffding with half width 1/sqrt(n) is 2/exp(2) = 0.271 so the level is 0.729
+Worst coverage for n from 1 to 20 and Bernoulli(p): 0.929 at n = 19 and p = 0.55
