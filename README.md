@@ -1,4 +1,4 @@
-# CISC820 Project 3: Confidence Intervals
+# Confidence Interval
 
 This code tests the 10 confidence intervals in `ci.m`.
 It makes random datasets with values in [0, 1], gives them to `ci.m` and counts how many times the interval has the true mean.
@@ -6,27 +6,21 @@ It makes random datasets with values in [0, 1], gives them to `ci.m` and counts 
 ## What you need
 
 1. MATLAB or GNU Octave.
-2. The file `ci.m` from the class. It is not in this repository. Copy `ci.m` into this folder before you run anything.
+2. The `ci.m` file given in class. It is not included, so copy it into the root folder of the project.
 
 ## Files
 
-**generate_data.m** makes one random dataset. It can use 3 distributions: Uniform[0, 1], Bernoulli(0.5) and Bernoulli(0.01).
-
-**coverage.m** calls `ci.m` many times and returns the fraction of times the interval has the true mean.
-
-**run_all.m** runs `coverage.m` for the 10 functions, the 3 distributions and n = 10, 100, 1000 and 10000.
-
-**probe.m** has small tests that show how each function behaves. The report uses them to explain the results.
-
-**scan_worst.m** finds the lowest coverage for n from 1 to 20 and Bernoulli(p). `probe.m` uses it for functions 7 and 10.
-
-**test_generate_data.m** checks that `generate_data.m` works.
-
-**test_coverage.m** is a quick check that `coverage.m` works with the 10 functions.
-
-**results.txt** is the output of `run_all.m`.
-
-**probe_results.txt** is the output of `probe.m`.
+| File | What it does |
+|---|---|
+| `generate_data.m` | Makes one random dataset from Uniform[0, 1], Bernoulli(0.5) or Bernoulli(0.01) |
+| `coverage.m` | Calls `ci.m` many times and returns the fraction of times the interval has the true mean |
+| `run_all.m` | Runs `coverage.m` for the 10 functions, the 3 distributions and n = 10, 100, 1000 and 10000 |
+| `probe.m` | Small tests that show how each function behaves |
+| `scan_worst.m` | Finds the lowest coverage for n from 1 to 20 and Bernoulli(p), used by `probe.m` |
+| `test_generate_data.m` | Checks that `generate_data.m` works |
+| `test_coverage.m` | Quick check that `coverage.m` works with the 10 functions |
+| `results.txt` | Output of `run_all.m` |
+| `probe_results.txt` | Output of `probe.m` |
 
 ## How to run
 
